@@ -1,0 +1,35 @@
+env:
+  name: CartPole-v1 # GridWorld or CartPole-v1
+  seed: 42 # Ensures the environment behaves the same every run, so experiments can be repeated.
+
+gridworld:
+  algorithm: SARSA # 'SARSA' or 'TabularQN'
+  grid_size: "12x12"
+  cell_rewards:
+    free: -1.0
+    wall: 0.0
+    goal: 10.0
+
+cartpole: 
+  algorithm: PPO # 'DQN', 'PPO', or 'A2C'
+  render_mode: human # 'human' for real-time display, 'rgb_array' for offscreen rendering, or null (YAML's None)for no rendering.
+  
+agent:
+  learning_rate: 0.0012 # How quickly the agent updates its neural network weights.
+  gamma: 0.95 # Discount factor for future rewards.
+  epsilon_start: 1.0 # Starting probability for exploration in an ε-greedy policy.
+  epsilon_end: 0.01 # Minimum value of epsilon.
+  epsilon_decay: 0.995 # Factor by which epsilon decreases after each episode or step.
+  alpha: 0.5 # Learning rate for tabular methods like Q-learning.
+  update_frequency: 5 # How often the target network gets updated. 4 means “update the target network every 4 episodes (or steps, depending on implementation).”
+  eps_clip: 0.2 # Clipping parameter for PPO to limit policy updates.
+  entropy_beta: 0.01 # Entropy regularization coefficient for A2C to encourage exploration.
+
+training:
+  n_episodes: 300 # Total number of episodes to train the agent.
+  max_steps: 80 # Maximum number of steps in a single episode. If the pole hasn’t fallen by this step, the episode ends automatically.
+  start_display: 0 # Episode number at which to start rendering the environment for visualization.
+
+replay_buffer:
+  capacity: 10000 # Maximum number of experiences the replay buffer can hold.
+  batch_size: 64 # Number of experience samples taken from the replay buffer per learning step.

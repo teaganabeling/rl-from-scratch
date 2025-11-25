@@ -1,0 +1,4 @@
+tensorflow
+gymnasium[classic-control]
+matplotlib
+numpy

@@ -1,0 +1,2 @@
+Environment,Learning rate,Gamma,Alpha,Number of episodes,Max steps
+CartPole-v1,0.0012,0.95,0.5,300,80
