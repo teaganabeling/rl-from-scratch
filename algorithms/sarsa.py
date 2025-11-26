@@ -41,7 +41,7 @@ class SARSA(Agent):
     # TODO: Make modular
     def save_q_table_as_csv(self, filename="q_table.csv"):
         import pandas as pd
-        # Flatten the 3D Q-table to 2D for CSV (row*col x action)
+        # Flatten the 3D Q-table to 2D for CSV (row * col x action)
         q_flat = self.Q.reshape(self.nrow * self.ncol, self.n_actions)
         df = pd.DataFrame(q_flat)
         df.to_csv(filename, index=False, header=False)
