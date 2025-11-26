@@ -51,6 +51,14 @@ A smooth, consistent increase with few oscillations. Began with a low learning r
 
 ---
 
+**Environment:** CartPole-v1  
+**Algorithm:** PPO  
+**Average Reward:** ≈ 78-80  
+**Notes & Observations:**  
+Smooth convergence; clipped objective prevents instability. After adjusting learning rate from 0.0003 (Trial 1) to 0.0012 (Trial 2), I saw much faster convergence.
+
+---
+
 ## Learning Curves
 
 ### Q-Learning
@@ -67,14 +75,6 @@ A smooth, consistent increase with few oscillations. Began with a low learning r
 
 ### PPO
 ![PPO Learning Curve](images/PPO.jpg)
-
----
-
-**Environment:** CartPole-v1  
-**Algorithm:** PPO  
-**Average Reward:** ≈ 78-80  
-**Notes & Observations:**  
-Smooth convergence; clipped objective prevents instability. After adjusting learning rate from 0.0003 (Trial 1) to 0.0012 (Trial 2), I saw much faster convergence.
 
 ---
 
