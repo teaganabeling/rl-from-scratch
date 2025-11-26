@@ -54,19 +54,19 @@ A smooth, consistent increase with few oscillations. Began with a low learning r
 ## Learning Curves
 
 ### Q-Learning
-![Q-Learning Learning Curve](images/Q-Learning.png)
+![Q-Learning Learning Curve](images/Q-Learning.jpg)
 
 ### SARSA
-![SARSA Learning Curve](images/SARSA.png)
+![SARSA Learning Curve](images/SARSA.jpg)
 
 ### DQN
-![DQN Learning Curve](images/DQN.png)
+![DQN Learning Curve](images/DQN.jpg)
 
 ### A2C
-![A2C Learning Curve](images/A2C.png)
+![A2C Learning Curve](images/A2C.jpg)
 
 ### PPO
-![PPO Learning Curve](images/PPO.png)
+![PPO Learning Curve](images/PPO.jpg)
 
 ---
 
