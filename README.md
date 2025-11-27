@@ -94,6 +94,6 @@ Smooth convergence; clipped objective prevents instability. After adjusting lear
 
 In the future, I hope to expand on the project through:
 - Deepening my understanding of reinforcement learning and other machine learning methods.
-- Refine and release codebase on GitHub as an educational toolkit for others’ exploration.
+- Refine and release codebase as an educational toolkit for others’ exploration.
 - Potentially integrate continuous-action algorithms (i.e. DDPG).
 - Apply trained agents to physical control tasks, like balancing an inverted pendulum or Stewart platform.
