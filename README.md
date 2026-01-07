@@ -1,17 +1,24 @@
 # rl-from-scratch
-Reinforcement learning library from scratch using raw NumPy to implement core algorithms and test them on classic control tasks and custom environments.
+Reinforcement learning library from scratch using only raw NumPy and Tensorflow to implement core algorithms and test them on classic control tasks and custom environments.
+
+## Overview
+
+This project implements fundamental reinforcement learning algorithms such as Q-Learning, SARSA, DQN, A2C, and PPO from “scratch” – that is, using only NumPy and TensorFlow – to illustrate clearly the mathematical and logical foundations which drive adaptive control methods. Through controlled simulations, it explores how different agents learn optimal policies via reward-based feedback, and bridges the gap between theory and implementation to expose how value-based and policy-based methods differ between algorithms.
+
+As opposed to treating reinforcement learning as a black-box optimization tool, this project approaches RL as a class of dynamical systems governed by stochastic update laws. Implementing each algorithm at a low level made it possible to directly examine how stability, convergence, and exploration-exploitation trade-offs emerge. It is this perspective which has increasingly shaped my interest in RL as a control object – particularly how policy iteration, value iteration, and actor-critic methods relate to classical feedback control and stability. 
 
 ---
 
 ## Objectives
 
 ### Project Goals
-- Implement key RL algorithms (Q-Learning, SARSA, DQN, PPO, and A2C).
-- Build custom Gridworlds and environment wrappers for CartPole
-- Visualize and analyze training metrics through heatmaps and convergence plots
+- Implement key RL algorithms (Q-Learning, SARSA, DQN, PPO, A2C).
+- Build custom Gridworlds and environment wrapper for CartPole.
+- Visualize and analyze training metrics through heatmaps & convergence plots.
+
 
 ### Constraints & Requirements
-- Written entirely in Numpy, with no use of external ML libraries.
+- Written primarily in Numpy, with minimal use of external ML libraries (solely Tensorflow).
 - Modular, easily customizable, with room for further expansion.
 - Emphasis on clarity and documentation over optimization.
 
@@ -93,7 +100,6 @@ Smooth convergence; clipped objective prevents instability. After adjusting lear
 ## Future Work
 
 In the future, I hope to expand on the project through:
-- Deepening my understanding of reinforcement learning and other machine learning methods.
-- Refine and release codebase as an educational toolkit for others’ exploration.
-- Potentially integrate continuous-action algorithms (i.e. DDPG).
+- Deepening my understanding of RL and other machine learning methods.
+- Continue refining codebase on GitHub as an educational toolkit for others’ exploration.
 - Apply trained agents to physical control tasks, like balancing an inverted pendulum or Stewart platform.
