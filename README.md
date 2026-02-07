@@ -54,7 +54,7 @@ Very fast rise and early plateau at max reward. Quick, strong, stable convergenc
 **Algorithm:** A2C  
 **Average Reward:** ≈ 60-70  
 **Notes & Observations:**  
-A smooth, consistent increase with few oscillations. Began with a low learning rate, which yielded no convergence. After increasing learning-rate in Trial 2, results drastically improved. Experimenting with other values may yield faster convergence.
+Gradual upward trend but with significant oscillations. Began with a low learning rate, which yielded no convergence. After increasing learning-rate in Trial 2, results drastically improved. Experimenting with other values may yield even faster, smoother convergence. 
 
 ---
 
